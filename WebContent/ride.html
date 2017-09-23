@@ -2,14 +2,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Need/Give a ride?</title>
 </head>
+<style>
+.need {
+    border: none;
+    color: black;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:15px;
+	font-size:16px;
+	cursor:pointer;
+}
 
+.give {
+    border: none;
+    color: black;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:15px;
+	font-size:16px;
+	cursor:pointer;
+}
+
+</style>
 <body>
-	<form>
-  		<input type="radio" name="ride" value="need" checked> I need a ride!<br>
-  		<input type="radio" name="ride" value="offer"> I can offer a ride!<br>
-       <input type="submit" value="Next">
-	</form> 
+	<div class="need">
+        <form>
+            <input type="button" value="I need a ride" onclick="search.html'" />
+        </form>
+    </div>
+    
+    <div class="give">
+    	<form>
+    		<input type="button" value="I can give a ride" onclick="search.html'" />
+        </form>
+    </div>
 </body>
 </html>
+
