@@ -33,24 +33,43 @@ header p {
 
 .jumbotron {
   display: flex;
-  align-items: center;
-  background-image: url('http://images.desimartini.com/media/uploads/samarth_interior.jpg');
-  background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
+
 
 .jumbotron h2 {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: #fff;
+  color: #98A1A2;
 }
 
 .jumbotron h3 {
   margin: 0 0 20px;
-  color: #fff;
+  color: #98A1A2;
+}
+
+
+.header-container {
+	display: block;
+	margin: auto;
+	overflow: auto;
+}
+
+.header-img img {
+	width: 400px;
+}
+
+.header-img {
+	float: left;
+	width: 400px;
+}
+
+.header-text {
+	padding-left: 70px;
+	width: 400px;
+	float: right;
 }
 
 section .row img {
