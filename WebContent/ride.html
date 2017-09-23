@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Need/Give a ride?</title>
+<title>Movie Pool | Ride</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <style>
 .need {
@@ -33,6 +36,20 @@
 
 </style>
 <body>
+  <nav>
+  	<ul>
+  		<li><a href="index.html">Movie Pool</a></li>
+  		<li><a href="ride.html" class="active">Find A Ride</a></li>
+  		<li><a href="drive.html">Become A Driver</a></li>
+  		<li><a href="contact.html">Contact Us</a></li>
+  		<li id="right-nav"><a href="account.html">Login</a></li>
+  	</ul>
+  </nav>
+	<form>
+  		<input type="radio" name="ride" value="need" checked> I need a ride!<br>
+  		<input type="radio" name="ride" value="offer"> I can offer a ride!<br>
+       <input type="submit" value="Next">
+	</form> 
 	<div class="need">
         <form>
             <input type="button" value="I need a ride" onclick="search.html'" />
