@@ -45,6 +45,11 @@ nav a {
 	padding-right: 50px;
 }
 
+nav li a:hover {
+	color: #66C9D3;
+	text-decoration: none;
+}
+
 .jumbotron {
   background-color: #ffffff;
   display: flex;
