@@ -6,34 +6,49 @@ body {
   font-weight: 300;
 }
 
-header {
-  padding: 20px 0;
+nav {
+	height: 50px;
+	width: 100%;
+	display: block;
+	position: fixed;
+	top: 0px;
+	z-index: +1;
 }
 
-header .row,
-footer .row {
-  display: flex;
-  align-items: center;
+nav ul {
+	text-align: center;
+	width: 100%;
+	display: block;
+	background-color: #98A1A2;
+	margin: 0;
+	padding: 10px;
+	padding-left: 50px;
 }
 
-header h1 {
-  font-weight: 700;
-  margin: 0;
+nav li {
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+	text-align: center;
 }
 
-header nav {
-  display: flex;
-  justify-content: flex-end;
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	padding: 0px 30px;
+	float: left;
 }
 
-header p {
-  padding: 0 20px;
-  margin: 0;
+#right-nav a {
+	float: right;
+	padding-right: 50px;
 }
 
 .jumbotron {
+  background-color: #ffffff;
   display: flex;
-  color: #ffffff;
+  color: #98A1A2;
   height: 500px;
 }
 
