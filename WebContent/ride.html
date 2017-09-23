@@ -8,30 +8,18 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <style>
-.need {
-    border: none;
-    color: black;
-    padding: 20px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+	input[type=text] {
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
     font-size: 16px;
-	margin-top:15px;
-	font-size:16px;
-	cursor:pointer;
-}
-
-.give {
-    border: none;
-    color: black;
-    padding: 20px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	margin-top:15px;
-	font-size:16px;
-	cursor:pointer;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+	margin:50px;
 }
 
 </style>
@@ -45,22 +33,9 @@
   		<li id="right-nav"><a href="account.html">Login</a></li>
   	</ul>
   </nav>
-	<form>
-  		<input type="radio" name="ride" value="need" checked> I need a ride!<br>
-  		<input type="radio" name="ride" value="offer"> I can offer a ride!<br>
-       <input type="submit" value="Next">
-	</form> 
-	<div class="need">
-        <form>
-            <input type="button" value="I need a ride" onclick="search.html'" />
-        </form>
-    </div>
-    
-    <div class="give">
-    	<form>
-    		<input type="button" value="I can give a ride" onclick="search.html'" />
-        </form>
-    </div>
+<form>
+</form>
+<input type="text" name="search" placeholder="Search by theatre/movie...">
 </body>
 </html>
 
