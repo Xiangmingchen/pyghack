@@ -19,7 +19,7 @@ nav ul {
 	text-align: center;
 	width: 100%;
 	display: block;
-	background-color: #98A1A2;
+	background-color: #34495E;
 	margin: 0;
 	padding: 10px;
 	padding-left: 50px;
@@ -46,8 +46,13 @@ nav a {
 }
 
 nav li a:hover {
-	color: #66C9D3;
+	color: #21C5B3;
 	text-decoration: none;
+}
+
+nav li a#home-link {
+	font-weight: 700;
+	color: #21C5B3;
 }
 
 .jumbotron {
@@ -62,14 +67,13 @@ nav li a:hover {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: #98A1A2;
+  color: #21C5B3;
 }
 
 .jumbotron h3 {
-  margin: 5px 0 15px;
+  margin: 3px 0 12px;
   color: #98A1A2;
 }
-
 
 .header-container {
 	display: block;
@@ -97,7 +101,16 @@ nav li a:hover {
 }
 
 .header-text a:hover {
-	color: #66C9D3;
+	color: #34495E;
+}
+
+.section {
+	background-color: #34495E;
+}
+
+.section-header h2 {
+	color: #ffffff;
+	font-weight: 700;
 }
 
 section .row img {
