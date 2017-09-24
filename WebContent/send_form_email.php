@@ -28,5 +28,5 @@ if(isset($_POST['submit'])) {
 $headers = 'From: '.$email."\r\n".
 'Reply-To: '.$email."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
+mail($email_to, $email_subject, $email_message, $headers);
 ?>
