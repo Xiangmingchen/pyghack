@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   padding-bottom: 50px;
 }
 
@@ -13,7 +13,8 @@ nav {
 
 .navbar-brand {
 	color: #21C5B3;
-	font-weight: 700;
+	font-weight: 300;
+	font-family: 'Fredoka One';
 }
 
 .navbar-brand:hover {
@@ -52,10 +53,11 @@ nav li a#home-link {
 
 
 .jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 4.5em;
+  font-weight: 100;
   margin: 0;
   color: #21C5B3;
+  font-family: 'Fredoka One';
 }
 
 .jumbotron h3 {
@@ -97,7 +99,9 @@ nav li a#home-link {
 
 .section-header h2 {
 	color: #ffffff;
-	font-weight: 700;
+	font-weight: 100;
+	font-size: 2.5em;
+	font-family: 'Fredoka One';
 }
 
 section .row img {
@@ -111,8 +115,9 @@ section .row img {
 
 .page-header-text h2 {
 	color: #21C5B3;
-	font-size: 40px;
-	font-weight: 700;
+	font-size: 3.5em;
+	font-weight: 100;
+	font-family: 'Fredoka One';'
 }
 
 .col-md-6 {
