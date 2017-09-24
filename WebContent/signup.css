@@ -6,15 +6,16 @@ h2 {
 	color:#21C5B3;
 }
 
-input[type=text], input[type=password] {
+input[type=email], input[type=password], input[type=repeat], input[type=checkbox] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
+	height: auto;
 }
 
 .signupbtn {
-    background-color: #4CAF50;
+    background-color: #21C5B3;
     color: #ffffff;
     padding: 14px 20px;
     margin-top: 8px;

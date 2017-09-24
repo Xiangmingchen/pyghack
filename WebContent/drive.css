@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+.container{
+	margin-top:10%;
+}
+
+input[type=license], input[type=plate] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
