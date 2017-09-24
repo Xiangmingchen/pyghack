@@ -149,12 +149,10 @@ h1 { font-weight: 400; }
   display:inline-block;
   font-size:16px;
 }
-
 .btn.btn-primary:hover {
   color: #ffffff;
   background-color: #fbd1d5;
 }
-
 .btn-secondary {
   background-color: #E8DFE0;
   color: #ffffff;
