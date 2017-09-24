@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+	background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png');
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png');
+	background-size: 40px;
+    background-position: 99%; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    margin:70px;
+	margin-left:100px;
+	display:inline-block;
+}
