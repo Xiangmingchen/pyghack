@@ -8,13 +8,21 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="account.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <nav class="navbar navbar-fixed-top">
+<header>
+	<nav class="navbar navbar-fixed-top">
 	  <div class="container-fluid">
 	  	<div class="navbar-header">
+		  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      	</button>
 	  		<a class="navbar-brand" href="index.html">Movie Pool</a>
 	  	</div>
+	  <div class="collapse navbar-collapse" id="myNavbar">
 	  	<ul class="nav navbar-nav">
 	  		<li><a href="ride.html">Find A Ride</a></li>
 	  		<li><a href="drive.html">Become A Driver</a></li>
@@ -24,8 +32,10 @@
 	  		<li id="right-nav"><a href="account.html">Login</a></li>
 	  	</ul>
 	  </div>
+	</div>
   </nav>
-
+</header>
+<body>
 <form action="/action_page.php">
   <div class="imgcontainer">
     <img src="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/girl-512.png" alt="Avatar" class="avatar">
@@ -38,27 +48,42 @@
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
+    <button type="submit" class="loginbtn">Login</button>
     <input type="checkbox" checked="checked"> Remember me
   </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn"><a href="index.html">Cancel</a></button>
-    <a href="password.html"><span class="psw">Forgot Password?</span></a>
-    <a href="signup.html"><span class="signup">Don't have an account?</span></a>
+  <div class="container" id="login-extra">
+  	<div class="row">
+  		<div id="psw">
+  			<a href="password.html">Forgot Password?</a>
+  		</div>
+  		<div id="acct">
+  			<a href="signup.html">Don't have an account?</a>
+  		</div>
+  	</div>
   </div>
 </form>
-<footer class="container">
-    <div class="row">
-      <p class="col-sm-4">&copy; 2017 MoviePool</p>
-      <ul class="col-sm-8">
-	      <li class="col-sm-1"><a href="#"><img src="img/social/facebook.png" alt="Facebook"></a></li>
-	      <li class="col-sm-1"><a href="#"><img src="img/social/twitter.png" alt="Twitter"></a></li>
-	      <li class="col-sm-1"><a href="#"><img src="img/social/instagram.png" alt="Instagram"></a></li>
-	      <li class="col-sm-1"><a href="#"><img src="img/social/mail.png" alt="Email"></a></li>
-	      <li class="col-sm-1"><a href="https://github.com/Polarpi/pyghack" target="_blank"><img src="img/social/github.png" alt="Github"></a></li>
-      </ul>
-    </div>
+
+<footer class="footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+		<span class="pull-left">
+			<p>MoviePool &copy; 2017</p>
+		</span>
+		</div>
+		<div class="icons">
+			<div class="col-md-4">
+			<span class="pull-right">
+			<a href="#"><img src="img/social/facebook.png" alt="Facebook"></a>
+	      	<a href="#"><img src="img/social/twitter.png" alt="Twitter"></a>
+	      	<a href="#"><img src="img/social/instagram.png" alt="Instagram"></a>
+	      	<a href="#"><img src="img/social/mail.png" alt="Email"></a>
+ 			<a href="https://github.com/Polarpi/pyghack" target="_blank"><img src="img/social/github.png" alt="Github"></a>
+ 			</span>
+	      	</div>
+		</div>
+	</div>
+	</div>
 </footer>
 </body>
 </html>
