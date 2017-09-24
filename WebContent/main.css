@@ -47,7 +47,7 @@ nav li a#home-link {
   background-color: #ffffff;
   display: flex;
   color: #98A1A2;
-  height: 500px;
+  height: 100%;
 }
 
 
@@ -65,6 +65,7 @@ nav li a#home-link {
 
 .header-container {
 	display: block;
+	padding-top: 100px;
 	margin: auto;
 	overflow: auto;
 }
@@ -74,14 +75,12 @@ nav li a#home-link {
 }
 
 .header-img {
-	float: left;
 	width: 400px;
 }
 
 .header-text {
-	padding-left: 70px;
+	padding-left: 20px;
 	width: 400px;
-	float: right;
 }
 
 .header-text a {
