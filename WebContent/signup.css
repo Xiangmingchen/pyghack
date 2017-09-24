@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 /* Full-width input fields */
+h2{
+	color:#21C5B3;
+}
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
