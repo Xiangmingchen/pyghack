@@ -6,51 +6,111 @@ body {
   font-weight: 300;
 }
 
-header {
-  padding: 20px 0;
+nav {
+	height: 50px;
+	width: 100%;
+	display: block;
+	position: fixed;
+	top: 0px;
+	z-index: +1;
 }
 
-header .row,
-footer .row {
-  display: flex;
-  align-items: center;
+nav ul {
+	text-align: center;
+	width: 100%;
+	display: block;
+	background-color: #34495E;
+	margin: 0;
+	padding: 10px;
+	padding-left: 50px;
 }
 
-header h1 {
-  font-weight: 700;
-  margin: 0;
+nav li {
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+	text-align: center;
 }
 
-header nav {
-  display: flex;
-  justify-content: flex-end;
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	padding: 0px 30px;
+	float: left;
 }
 
-header p {
-  padding: 0 20px;
-  margin: 0;
+#right-nav a {
+	float: right;
+	padding-right: 50px;
+}
+
+nav li a:hover {
+	color: #21C5B3;
+	text-decoration: none;
+}
+
+nav li a#home-link {
+	font-weight: 700;
+	color: #21C5B3;
 }
 
 .jumbotron {
+  background-color: #ffffff;
   display: flex;
-  align-items: center;
-  background-image: url('http://images.desimartini.com/media/uploads/samarth_interior.jpg');
-  background-size: cover;
-  color: #ffffff;
+  color: #98A1A2;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
+
 
 .jumbotron h2 {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: #fff;
+  color: #21C5B3;
 }
 
 .jumbotron h3 {
-  margin: 0 0 20px;
-  color: #fff;
+  margin: 3px 0 12px;
+  color: #98A1A2;
+}
+
+.header-container {
+	display: block;
+	margin: auto;
+	overflow: auto;
+}
+
+.header-img img {
+	width: 400px;
+}
+
+.header-img {
+	float: left;
+	width: 400px;
+}
+
+.header-text {
+	padding-left: 70px;
+	width: 400px;
+	float: right;
+}
+
+.header-text a {
+	color: #98A1A2;
+}
+
+.header-text a:hover {
+	color: #34495E;
+}
+
+.section {
+	background-color: #34495E;
+}
+
+.section-header h2 {
+	color: #ffffff;
+	font-weight: 700;
 }
 
 section .row img {
@@ -68,33 +128,11 @@ section .row img {
   box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-/** Sass variables compile to a static string; CSS variables are dynamic and inherited
-    Loop through the map and set CSS custom properties using Sass variables**/
-@each $button, $color in $colors {
-  .#{$button} {
-    --color: $color;
-    --hover: adjust-hue($color, 45deg);
-  }
-}
-
-/** Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.**/
-button {  
-  color: var(--color);
-  transition: 0.25s;
-  
-  &:hover,
-  &:focus { 
-    border-color: var(--hover);
-    color: #fff;
-  }
-}
-
 button {
   background: none;
   border: 2px solid;
   font: inherit;
   line-height: 1;
-  margin: 0.5em;
   padding: 1em 2em;
 }
 

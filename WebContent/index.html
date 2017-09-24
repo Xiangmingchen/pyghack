@@ -3,28 +3,101 @@
 <head>
   <title>Movie Pool</title>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+  <script src="carousel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:white;">
+<body>
+  <nav>
+  	<ul>
+  		<li><a href="index.html" class="active" id="home-link">Movie Pool</a></li>
+  		<li><a href="ride.html">Find A Ride</a></li>
+  		<li><a href="drive.html">Become A Driver</a></li>
+  		<li><a href="contact.html">Contact Us</a></li>
+  		<li id="right-nav"><a href="account.html">Login</a></li>
+  	</ul>
+  </nav>
   <section class="jumbotron">
-    <div class="container">
-      <div class="row text-center">
-        <h2>Movie Pool</h2>
-        <h3>Bring the world closer together</h3>
-        <button class="start" href="ride.html">Start Now</button>
-     </div>
+    <div class="header-container">
+    	  <div class="header-img">
+    	  	<img src="img/header/carpool-logo.png">
+    	  </div>
+      <div class="header-text">
+	      <h2>Movie Pool</h2>
+	      <h3>Find a ride to your favorite movies in Champaign-Urbana.</h3>
+	      <a href="ride.html"><button>Start Now</button></a>
+      </div>
    </div>
  </section>
-  <section class="container">
-     <div class="row" id="others">
-         <figure class="col-sm-6">
-              <h2>New and Coming Soon</h2>
-              <img src="http://s3.foxmovies.com/foxmovies/production/films/41/images/gallery/kingsman-02-gallery-image.jpg" />
-         </figure>
-    </div>
-  </section>
+ <div class="section">
+	 <div class="container">
+	    <div class="col-md-12">
+	    <div class="section-header">
+	         <h2>Current Movies</h2>
+		</div>
+	        <div class="well">
+	            <div id="myCarousel" class="carousel slide">
+	                
+	                <!-- Carousel items -->
+	                <div class="carousel-inner">
+	                    <div class="item active">
+	                        <div class="row">
+	                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                        </div>
+	                        <!--/row-->
+	                    </div>
+	                    <!--/item-->
+	                    <div class="item">
+	                        <div class="row">
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                        </div>
+	                        <!--/row-->
+	                    </div>
+	                    <!--/item-->
+	                    <div class="item">
+	                        <div class="row">
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+	                            </div>
+	                        </div>
+	                        <!--/row-->
+	                    </div>
+	                    <!--/item-->
+	                </div>
+	                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+	
+	                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+	            </div>
+	            <!--/myCarousel-->
+	        </div>
+	        <!--/well-->
+	    </div>
+	</div>
+ </div>
   <footer class="container">
     <div class="row">
       <p class="col-sm-4">&copy; 2017 MoviePool</p>
@@ -36,16 +109,5 @@
       </ul>
       </div>
     </footer>
-  <header class="container">
-    <div class="row">
-      <nav class="col-sm-8 text-right">
-          <p>newest</p>
-          <p>contact</p>
-      </nav>
-    </div>
-  </header>
-
-
-
 </body>
 </html>
