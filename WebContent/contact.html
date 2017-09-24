@@ -9,15 +9,41 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <nav>
-  	<ul>
-  		<li><a href="index.html" id="home-link">Movie Pool</a></li>
-  		<li><a href="ride.html">Find A Ride</a></li>
-  		<li><a href="drive.html">Become A Driver</a></li>
-  		<li><a href="contact.html" class="active">Contact Us</a></li>
-  		<li id="right-nav"><a href="account.html">Login</a></li>
-  	</ul>
+  <nav class="navbar navbar-fixed-top">
+	  <div class="container-fluid">
+	  	<div class="navbar-header">
+	  		<a class="navbar-brand" href="index.html">Movie Pool</a>
+	  	</div>
+	  	<ul class="nav navbar-nav">
+	  		<li><a href="ride.html">Find A Ride</a></li>
+	  		<li><a href="drive.html">Become A Driver</a></li>
+	  		<li><a href="contact.html">Contact Us</a></li>
+	  	</ul>
+	  	<ul class="nav navbar-nav navbar-right">
+	  		<li id="right-nav"><a href="account.html">Login</a></li>
+	  	</ul>
+	  </div>
   </nav>
+  <div class="container">
+	  <div class="row">
+		  <div class="col-sm-6">
+		  	<div class="page-header-text">
+		  		<h2>Contact Us</h2>
+		  	</div>
+		  </div>
+	  </div>
+  </div>
+  <div class="container">
+	  <form method="post" action="mailto:eugeniachen123@gmail.com">
+		  <div class="form-group">
+			<label for="name"><b>Name</b></label>
+		    	<input type="text" class="form-control" id="name" placeholder="Enter name, first and last" name="name" required>
+		
+			<label for="message"><b>Message</b></label>
+			<input type="text" class="form-control" id="message" placeholder="Enter message" name="message" required>
+		  </div>
+	  </form>
+  </div>
 <footer class="container">
     <div class="row">
       <p class="col-sm-4">&copy; 2017 MoviePool</p>
