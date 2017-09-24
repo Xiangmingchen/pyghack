@@ -125,6 +125,11 @@ nav li a#home-link {
 	width: 400px;
 }
 
+#carousel-row {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .section {
 	background-color: #34495E;
 }
