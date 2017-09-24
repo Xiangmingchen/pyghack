@@ -33,6 +33,15 @@ nav li a#home-link {
 	color: #21C5B3;
 }
 
+.navbar-toggle {
+	border-color: #ffffff;
+	border-width: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
 .jumbotron {
   background-color: #ffffff;
   display: flex;
@@ -96,9 +105,9 @@ section .row img {
   width: 100%;
 }
 
-/**.page-header {
-	margin: 80px 80px 0;
-}**/
+.page-header {
+	margin-top: 80px;
+}
 
 .page-header-text h2 {
 	color: #21C5B3;
