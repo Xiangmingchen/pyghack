@@ -14,15 +14,9 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .loginbtn {
     background-color: #4CAF50;
-    color: #ffffff;
-=======
-button {
-    background-color: #21C5B3;
     color: white;
->>>>>>> origin/master
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
