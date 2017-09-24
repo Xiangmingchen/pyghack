@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-
 /* Full-width input fields */
 h2{
 	color:#21C5B3;
@@ -28,7 +27,7 @@ button {
 /* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
-    background-color: #CC3A3D;
+    background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
