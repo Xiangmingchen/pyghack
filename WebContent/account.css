@@ -2,6 +2,10 @@
 /* CSS Document */
 
 <style>
+.a{
+	display:block;
+}
+
 form {
     border: 3px solid #f1f1f1;
 }
@@ -53,19 +57,19 @@ img.avatar {
     padding: 16px;
 }
 
-span.psw {
+.psw {
     float: right;
     padding-top: 16px;
 }
 
-span.signup {
+.signup {
 	padding:30px;
 	float:inherit;
 	padding-top:16px;
 }
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
+	.psw {
        display: block;
        float: none;
     }
