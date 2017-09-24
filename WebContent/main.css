@@ -93,6 +93,38 @@ nav li a#home-link {
 	color: #34495E;
 }
 
+.container-pad {
+	padding: 50px;
+}
+
+#tickets-text {
+	padding-top: 100px;
+	text-align: right;
+}
+
+#movie-tickets {
+	width: 350px;
+}
+
+#section-2 {
+	background-color: #f5f5f5;
+}
+
+#drive-text {
+	padding-top: 60px;
+	color: #34495E;
+}
+
+#drive-caption {
+	color: #98A1A2;
+	margin: 0;
+}
+
+#drive-car {
+	padding-top: 30px;
+	width: 400px;
+}
+
 .section {
 	background-color: #34495E;
 }
