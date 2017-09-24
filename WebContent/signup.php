@@ -1,36 +1,5 @@
 <?php
-	session_start();
-	$mysqli = new mysqli('localhost','root', '','accounts');
-	$conn =  mysqli_connect('localhost','root', '','accounts');
-	
-	if($_SERVER['REQUEST_METHOD'] == 'POST'){
-		// two passwords are matching
-		if ($_POST['pwd'] == $_POST['repeatpwd']){
-			$email = $mysqli->real_escape_string($_POST['email']);
-			$password = md5($_POST['pwd']);//md5 hash security
-			$first = $mysqli->real_escape_string($_POST['first']);
-			$last = $mysqli->real_escape_string($_POST['last']);
-			
-			//Check if other users have same email
-			$sql = "SELECT * FROM users  WHERE user_email = '$email'";
-			$result = mysqli_query($conn, $sql);
-			$resultCheck = mysqli_num_rows($result);
-			if ($resultCheck > 0) {
-				header("Location: signup.php?signup=usertaken");
-				exit();
-			} else {
-				//Hashing the password
-				$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-				//Insert User into database
-				$sql = "INSERT INTO users (first, last, email, pwd) VALUES ('$first', '$last', '$email', '$hashedPwd')";
-				mysqli_query($conn, $sql);
-				header("Location: success.html");
-				exit();
-				
-			}
-		}
-		
-	}
+    session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="signup.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -83,32 +52,45 @@
 	 </div>
   </div>
   <div class="container">
-	  <form class = "form" action="signup.php" method = "post" enctype = "multipart/form-data" autocomplete = "off">
-	  	  <div class="form-group">
-			<label for="first"><b>First Name</b></label>
-		    	<input type="text" class="form-control" id="first" placeholder="Please enter your first name" name="first" required>
-		  </div>
-		  <div class="form-group">
-			<label for="last"><b>Last Name</b></label>
-		    	<input type="text" class="form-control" id="last" placeholder="Please enter your last name" name="last" required>
-		  </div>
+	  <form class="signup-form" action="includes/signup.inc.php" method="POST">
+            <div class="form-group">
+            <label for="first"><b>First Name</b></label>
+            <input type="text" class="form-control" id="first" placeholder="Please enter your first name" name="first" required>
+            </div>
+
+            <div class="form-group">
+            <label for="last"><b>Last Name</b></label>
+            <input type="text" class="form-control" id="last" placeholder="Please enter your last name" name="last" required>
+            </div>
+
 		  <div class="form-group">
 			<label for="email"><b>Email</b></label>
-		    	<input type="email" class="form-control" id="email" placeholder="Please enter your email" name="email" required>
-		  </div>
+		  <input type="email" class="form-control" id="email" placeholder="Please enter your email" name="email" required>
+            </div>
+
+		    <div class="form-group">
+            <label for="username"><b>Username</b></label>
+            <input type="text" class="form-control" id="username" placeholder="Please enter your favorite username" name="username" required>
+        </div>
+
+        <div class="form-group">
+        <label for="password"><b>Password</b></label>
+        <input type="password" class="form-control" id="password" placeholder="Please enter your password" name="password" required>
+        </div>
+
+
 		  <div class="form-group">
-		  	<label for="password"><b>Password</b></label>
-		  	<input type="text" class="form-control" id="password" placeholder="Please enter your password" name="pwd" required>
-		  </div>
-		  <div class="form-group">
-		  	<label for="message"><b>Repeat Password</b></label>
-			<input type="text" class="form-control" id="repeat" placeholder="Repeat Password:" name="repeatpwd" required>
-            <button type="submit" class="signupbtn">Sign Up</button>
+		  	<label for="message"><b>Confirm Password</b></label>
+			<input type="password" class="form-control" id="repeat" placeholder="Please enter your password again" name="repeatpassword" required>
+        </div>
+
+            <button type="submit" class="signupbt" name="sub">Sign Up</button>
             <input type="checkbox" checked="checked"> Remember me
+
           	<div class="privacy-text">
-          	<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          	</div>
-		  </div>
+          	<p>   By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          	</div> 
+          </div>         
 	  </form>
   </div>
 <footer class="footer">
@@ -133,5 +115,5 @@
 	</div>
 	</div>
 </footer>
-<link href="signup.css" type="text/css" rel="stylesheet">
 </html>
+
