@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#myCarousel').carousel({
-	interval: 10000
+	interval: 5000
 	})
     
     $('#myCarousel').on('slid.bs.carousel', function() {
